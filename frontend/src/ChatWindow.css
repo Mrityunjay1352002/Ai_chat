@@ -1,0 +1,16 @@
+/* Placeholder CSS */
+
+input::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Optional smooth focus effect */
+
+input:focus::placeholder {
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
