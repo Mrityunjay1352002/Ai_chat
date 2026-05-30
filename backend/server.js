@@ -14,7 +14,12 @@ const ai = new GoogleGenAI({
 });
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://ai-chat-eight-lyart.vercel.app"
+  ]
+}));
 
 /* MongoDB Connection */
 const connectDB = async () => {
